@@ -1,0 +1,21 @@
+﻿internal class Program
+{ //Un algoritmo para leer una calificación y determinar si es deficiente, regular, bien, muy bien o excelente.
+    private static void Main(string[] args)
+    {
+        double nota;
+        Console.WriteLine("Ingrese su calificación obtenida");
+        nota = Convert.ToInt32(Console.ReadLine());
+        if (nota <= 70)
+        Console.WriteLine("La nota de " + nota + " a sido deficiente");
+        if (84>=nota && nota>= 71)
+        Console.WriteLine("La nota de "+nota+" a sido regular");
+        if (nota>=85 && 90>=nota)
+        Console.WriteLine("La nota de "+nota+" a sido buena");
+        if (nota>=91 && 94>=nota)
+        Console.WriteLine("La nota de "+nota+" a sido muy buena");
+        if (nota>=95 && 100>=nota)
+        Console.WriteLine("La nota de "+nota+" a sido excelente");
+
+
+    }
+}
