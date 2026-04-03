@@ -1,0 +1,26 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int nota1, nota2, nota3, nota4, nota5, promedio; string materia;
+        Console.WriteLine("Ingrese la materia");
+        materia = Console.ReadLine();
+        Console.WriteLine("Ingrese la primera calificación obtenida");
+        nota1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese la segunda calificación obtenida");
+        nota2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrse la tercera calificación obtenida");
+        nota3 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese la cuarta calificación obtenida");
+        nota4 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrse la quinta calificación obtenida");
+        nota5 = Convert.ToInt32(Console.ReadLine());
+
+        promedio = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
+
+        if (promedio > 70)
+        { Console.WriteLine("Estudiante aprobado con  " + promedio); }
+        else { Console.WriteLine("Estudiante reprobado con  " + promedio); }
+
+    }
+}
