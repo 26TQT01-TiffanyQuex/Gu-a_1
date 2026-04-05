@@ -1,0 +1,17 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int num;
+        Console.WriteLine("Este es el buzón de voz, marque 1 para Ventas, 2 para Recepción, 3 para Dirección y 4 para Compras");
+        num = Convert.ToInt32(Console.ReadLine());
+        if (num == 1)
+            Console.WriteLine("Bienvenido al departamento de ventas, soy Norberto Bayo, nobayo8040@gmail.com");
+        else if (num == 2)
+            Console.WriteLine("Bienvenido al departamento de recepción, soy Susie Melendez, susie.Melez@gmail.com");
+        else if (num == 3)
+            Console.WriteLine("Bienvenido al departamento de dirección, soy Amir Pugh, ammmir2344@gmail.com");
+        else if (num == 4)
+            Console.WriteLine("Bienvenido al departamento de compras, soy Sadie Howel, SadiHoWW3000@gmail.com");
+    }
+}
